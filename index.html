@@ -214,6 +214,13 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-s
     <div class="ctas"><a class="btn primary" href="mailto:kushagratiwari1064@gmail.com">Send an email ↗</a><a class="btn" href="https://www.linkedin.com/in/kushagra-tiwari-709b86405/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
    </div>
   </section>
+  <section id="github-activity" class="reveal" style="padding: 40px 0; text-align: center;">
+  <div class="section-top">
+    <div class="eyebrow">06 / GITHUB ACTIVITY</div>
+    <h2>Coding Contributions</h2>
+  </div>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kushagratiwari-dot&theme=react-dark&hide_border=true" alt="GitHub Activity Graph" style="width: 100%; max-width: 850px; border-radius: 12px; margin-top: 20px;" />
+</section>
  </div>
 </main>
 <footer><div class="container footer-inner"><span>© <span id="year"></span> Kushagra Tiwari</span><span>Designed with curiosity · Built with HTML, CSS &amp; JavaScript</span><a href="#home">Back to top ↑</a></div></footer>
@@ -250,6 +257,16 @@ const navObserver=new IntersectionObserver(entries=>{
  });
 },{rootMargin:'-35% 0px -55% 0px'});
 sections.forEach(section=>navObserver.observe(section));
+</script>
+ <!-- 3D Tilt Card Effect Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".card, .project, .box, .reveal"), {
+    max: 12,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.25
+  });
 </script>
 </body>
 </html>
